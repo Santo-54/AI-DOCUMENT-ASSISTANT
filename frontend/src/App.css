@@ -1,0 +1,200 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #202938;
+}
+
+.app {
+  max-width: 900px;
+  height: 100vh;
+  margin: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dce1e9;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+header p,
+.welcome p {
+  color: #657086;
+}
+
+.chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 0;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.message {
+  max-width: 85%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.message p {
+  white-space: pre-wrap;
+  margin-bottom: 0;
+}
+
+.message.user {
+  margin-left: auto;
+  background: #dceaff;
+}
+
+.message.assistant {
+  margin-right: auto;
+  background: white;
+  border: 1px solid #e0e5ed;
+}
+
+.loading {
+  color: #657086;
+}
+
+.composer {
+  display: flex;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid #dce1e9;
+}
+
+.composer input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #ccd3df;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.composer button {
+  padding: 0 24px;
+  border: none;
+  border-radius: 10px;
+  background: #245fe8;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.composer button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message {
+  text-align: left;
+}
+
+.message-content {
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.message-content p {
+  white-space: normal;
+}
+
+.message-content pre {
+  overflow-x: auto;
+  padding: 14px;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.message-content code {
+  font-family: Consolas, monospace;
+}
+
+.message-content :not(pre) > code {
+  background: #edf0f5;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.message-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.message-content th,
+.message-content td {
+  padding: 8px;
+  border: 1px solid #dce1e9;
+  text-align: left;
+}
+
+.chat {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 24px 0;
+}
+
+.documents {
+  padding: 16px 0;
+  border-bottom: 1px solid #dce1e9;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #245fe8;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.notice {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.documents ul {
+  margin-bottom: 0;
+  overflow-wrap: anywhere;
+}
+
+.message {
+  text-align: left;
+}
+
+.message-content {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.message-content pre {
+  overflow-x: auto;
+  padding: 12px;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+}
+
+.message-content p {
+  white-space: normal;
+}
